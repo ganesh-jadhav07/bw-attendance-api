@@ -38,6 +38,7 @@ router.post(
         Title: title,
         Host: host,
         Description: description,
+        Date: date,
         startTime: startTime,
         endTime: endTime,
       });

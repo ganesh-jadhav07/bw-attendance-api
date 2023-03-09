@@ -27,6 +27,9 @@ const Session = sequelize.define(
       defaultValue: UUIDV4,
       unique: true,
     },
+    Date: {
+      type: DataTypes.DATEONLY,
+    },
     StartTime: {
       type: DataTypes.DATE,
     },
