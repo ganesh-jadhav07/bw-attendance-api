@@ -21,7 +21,6 @@ router.post(
   [
     check("title", "Title is required").not().isEmpty(),
     check("host", "Host is required").not().isEmpty(),
-    check("description", "Description is required").not().isEmpty(),
     // check("startTime", "Start Time is required").not().isEmpty(),
     // check("endTime", "End Time is required").not().isEmpty(),
   ],
