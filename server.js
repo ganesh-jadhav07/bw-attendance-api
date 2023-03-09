@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 //const path = require("path");
 
 // Import Database Model
@@ -11,6 +12,8 @@ const Attendance = require("./models/Attendance");
 const Team = require("./models/Team");
 
 const app = express();
+
+app.use(cors());
 
 // Init Middleware
 app.use(express.json({ extended: false }));

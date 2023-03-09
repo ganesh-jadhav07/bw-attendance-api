@@ -49,7 +49,7 @@ router.post("/addattendance/:sessionid", studentauth, async (req, res) => {
 router.get("/attendancebysession/:id", adminauth, async (req, res) => {
   try {
     let attendance = await sequelize.query(
-      "SELECT student.name, student.email, student.department,student.contact, student.teamId FROM student, attendance, team where student.id  = attendance.studentId  and team.id = and attendance.sessionId = ?",
+      "SELECT student.name, student.email, student.department,student.contact, team.name FROM student, attendance, team where student.id  = attendance.studentId  and team.id = student.teamId and attendance.sessionId = ?",
       {
         replacements: [req.params.id],
         type: QueryTypes.SELECT,
