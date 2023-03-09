@@ -1,0 +1,8 @@
+ "serviceID": "VAfd191671a3b99793a0cc802c32dd8dee",
+  "TWILIO_ACCOUNT_SID": "ACf8fb87162e3f874f5e88b068bb0467f8",
+  "TWILIO_AUTH_TOKEN": "c2ad5b5883a6e717faf830a0387c94d2",
+  "TWILIO_PHONE_NUMBER": "+17472793536",
+  "user": "exam.tech172@gmail.com",
+  "pass": "jidzatswurpcuyry",
+  "serviceIDG": "VA9b39a5e15a7e9b19ee3134ec007b5c57"
+  "mySqlURI": "mysql://uelrc7chhbvrkchq:xqeRchW76z2PvvoH6cbg@brkmbj1g4vqvm4gyqb26-mysql.services.clever-cloud.com:3306/brkmbj1g4vqvm4gyqb26",
