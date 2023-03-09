@@ -31,7 +31,7 @@ router.post(
       return res.status(400).json({ errors: errors.array() });
     }
 
-    const { title, host, description, startTime, endTime } = req.body;
+    const { title, host, description, date, startTime, endTime } = req.body;
 
     try {
       let session = new Session({
@@ -44,7 +44,7 @@ router.post(
 
       await session.save();
 
-      res.send({ msg: "Session Added Successfully" });
+      res.status(201).send({ msg: "Session Added Successfully" });
     } catch (err) {
       console.error(err.message);
       res.status(500).send("Server Error");
