@@ -31,10 +31,10 @@ const Session = sequelize.define(
       type: DataTypes.DATEONLY,
     },
     StartTime: {
-      type: DataTypes.DATE,
+      type: DataTypes.TIME,
     },
     EndTime: {
-      type: DataTypes.DATE,
+      type: DataTypes.TIME,
     },
   },
   {
