@@ -53,6 +53,20 @@ router.post(
   }
 );
 
+router.post("/removesession/:id", adminauth, async (req, res) => {
+  try {
+    let session = await Session.destroy({ where: { id: req.params.id } });
+    console.log(session);
+    if (session === 0) {
+      return res.status(400).json({ errors: [{ msg: "Session not found!" }] });
+    }
+    res.status(201).send({ msg: "Session Deleted" });
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send("Server Error");
+  }
+});
+
 // @route /session/getsessionbycode/:sessionCode
 // @desc    Get Session by Session Code
 // @access  Public
